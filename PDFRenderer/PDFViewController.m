@@ -39,15 +39,7 @@
 
 -(void)drawText
 {
-    NSString* fileName = @"Invoice.PDF";
-
-    NSArray *arrayPaths =
-    NSSearchPathForDirectoriesInDomains(
-                                        NSDocumentDirectory,
-                                        NSUserDomainMask,
-                                        YES);
-    NSString *path = [arrayPaths objectAtIndex:0];
-    NSString* pdfFileName = [path stringByAppendingPathComponent:fileName];
+    NSString *pdfFileName = [self pathFileName];
 
     NSString* textToDraw = @"Hello World";
     CFStringRef stringRef = (__bridge CFStringRef)textToDraw;
@@ -93,6 +85,20 @@
     // Close the PDF context and write the contents out.
     UIGraphicsEndPDFContext();
     
+}
+
+- (NSString *)pathFileName
+{
+    NSString* fileName = @"Invoice.PDF";
+    
+    NSArray *arrayPaths =
+    NSSearchPathForDirectoriesInDomains(
+                                        NSDocumentDirectory,
+                                        NSUserDomainMask,
+                                        YES);
+    NSString *path = [arrayPaths objectAtIndex:0];
+    NSString* pdfFileName = [path stringByAppendingPathComponent:fileName];
+    return pdfFileName;
 }
 
 -(void)showPDFFile
