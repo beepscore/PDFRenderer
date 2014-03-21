@@ -42,7 +42,7 @@
         <!--View Controller-->
         <scene sceneID="4CJ-fy-Wyj">
             <objects>
-                <viewController id="PO0-On-BcI" sceneMemberID="viewController">
+                <viewController id="PO0-On-BcI" customClass="PDFViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Ml-31-48C"/>
                         <viewControllerLayoutGuide type="bottom" id="tVp-t8-TzJ"/>
