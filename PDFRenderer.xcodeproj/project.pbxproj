@@ -27,8 +27,7 @@
 		DE2A19F418DBE947007D97F8 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A19F318DBE947007D97F8 /* PDFViewController.m */; };
 		DE2A19F518DBE947007D97F8 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A19F318DBE947007D97F8 /* PDFViewController.m */; };
 		DE6E3EEB18DC22B30065D779 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE6E3EEA18DC22B30065D779 /* README.md */; };
-		DEABCDA718DC24A10008C9D2 /* InvoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEABCDA618DC24A10008C9D2 /* InvoiceView.m */; };
-		DEABCDA818DC24A10008C9D2 /* InvoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEABCDA618DC24A10008C9D2 /* InvoiceView.m */; };
+		DEA81CC118DC2A370095E55B /* InvoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA81CC018DC2A370095E55B /* InvoiceView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +66,7 @@
 		DE2A19F218DBE947007D97F8 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		DE2A19F318DBE947007D97F8 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
 		DE6E3EEA18DC22B30065D779 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		DEABCDA518DC24A10008C9D2 /* InvoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvoiceView.h; sourceTree = "<group>"; };
-		DEABCDA618DC24A10008C9D2 /* InvoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvoiceView.m; sourceTree = "<group>"; };
+		DEA81CC018DC2A370095E55B /* InvoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InvoiceView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +129,8 @@
 			children = (
 				DE2A19C918DBD86B007D97F8 /* AppDelegate.h */,
 				DE2A19CA18DBD86B007D97F8 /* AppDelegate.m */,
-				DEABCDA518DC24A10008C9D2 /* InvoiceView.h */,
-				DEABCDA618DC24A10008C9D2 /* InvoiceView.m */,
 				DE2A19CC18DBD86B007D97F8 /* Main_iPhone.storyboard */,
+				DEA81CC018DC2A370095E55B /* InvoiceView.xib */,
 				DE2A19CF18DBD86B007D97F8 /* Main_iPad.storyboard */,
 				DE2A19D218DBD86B007D97F8 /* ViewController.h */,
 				DE2A19D318DBD86B007D97F8 /* ViewController.m */,
@@ -256,6 +253,7 @@
 				DE2A19D618DBD86B007D97F8 /* Images.xcassets in Resources */,
 				DE6E3EEB18DC22B30065D779 /* README.md in Resources */,
 				DE2A19CE18DBD86B007D97F8 /* Main_iPhone.storyboard in Resources */,
+				DEA81CC118DC2A370095E55B /* InvoiceView.xib in Resources */,
 				DE2A19C518DBD86B007D97F8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +277,6 @@
 				DE2A19CB18DBD86B007D97F8 /* AppDelegate.m in Sources */,
 				DE2A19C718DBD86B007D97F8 /* main.m in Sources */,
 				DE068E4218DC0E1A000F4FB8 /* PDFRenderer.m in Sources */,
-				DEABCDA718DC24A10008C9D2 /* InvoiceView.m in Sources */,
 				DE2A19F418DBE947007D97F8 /* PDFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEABCDA818DC24A10008C9D2 /* InvoiceView.m in Sources */,
 				DE2A19E918DBD86B007D97F8 /* PDFRendererTests.m in Sources */,
 				DE068E4318DC0E1A000F4FB8 /* PDFRenderer.m in Sources */,
 				DE2A19F518DBE947007D97F8 /* PDFViewController.m in Sources */,
