@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSString *fileName = [self getPDFFileName];
-    [PDFRenderer drawText:fileName];
+    [PDFRenderer drawPDF:fileName];
     [self showPDFFile];
 }
 

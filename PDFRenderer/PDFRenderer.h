@@ -11,6 +11,10 @@
 
 @interface PDFRenderer : NSObject
 
-+ (void)drawText:(NSString *)pdfFileName;
++ (void)drawPDF:(NSString*)fileName;
+
++ (void)drawText;
+
++ (void)drawLineFromPoint:(CGPoint)from toPoint:(CGPoint)to;
 
 @end

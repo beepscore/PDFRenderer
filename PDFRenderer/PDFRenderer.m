@@ -10,18 +10,28 @@
 
 @implementation PDFRenderer
 
-+ (void)drawText:(NSString *)pdfFileName {
++ (void)drawPDF:(NSString*)fileName {
+    // Create the PDF context using the default page size of 612 x 792.
+    UIGraphicsBeginPDFContextToFile(fileName, CGRectZero, nil);
+    // Mark the beginning of a new page.
+    UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, 612, 792), nil);
+
+    CGPoint from = CGPointMake(0, 0);
+    CGPoint to = CGPointMake(200, 300);
+    [PDFRenderer drawLineFromPoint:from toPoint:to];
+
+    [self drawText];
+
+    // Close the PDF context and write the contents out.
+    UIGraphicsEndPDFContext();
+}
+
++ (void)drawText {
 
     NSString* textToDraw = @"Hello World";
     CTFramesetterRef framesetter = [PDFRenderer createFramesetterFromString:textToDraw];
 
     CTFrameRef frameRef = [PDFRenderer createFrameRef:framesetter];
-
-    // Create the PDF context using the default page size of 612 x 792.
-    UIGraphicsBeginPDFContextToFile(pdfFileName, CGRectZero, nil);
-
-    // Mark the beginning of a new page.
-    UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, 612, 792), nil);
 
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
 
@@ -39,9 +49,6 @@
 
     CFRelease(frameRef);
     CFRelease(framesetter);
-
-    // Close the PDF context and write the contents out.
-    UIGraphicsEndPDFContext();
 }
 
 // CoreFoundation naming convention for functions
@@ -69,6 +76,28 @@
     CTFrameRef frameRef = CTFramesetterCreateFrame(framesetter, currentRange, framePath, NULL);
     CGPathRelease(framePath);
     return frameRef;
+}
+
++ (void)drawLineFromPoint:(CGPoint)from toPoint:(CGPoint)to {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    CGContextSetLineWidth(context, 2.0);
+
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+
+    CGFloat components[] = {0.2, 0.2, 0.2, 0.3};
+
+    CGColorRef color = CGColorCreate(colorspace, components);
+
+    CGContextSetStrokeColorWithColor(context, color);
+
+
+    CGContextMoveToPoint(context, from.x, from.y);
+    CGContextAddLineToPoint(context, to.x, to.y);
+
+    CGContextStrokePath(context);
+    CGColorSpaceRelease(colorspace);
+    CGColorRelease(color);
 }
 
 @end
