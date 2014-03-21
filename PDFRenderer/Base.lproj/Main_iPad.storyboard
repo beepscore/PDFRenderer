@@ -15,7 +15,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umY-KO-Uxx">
+                                <rect key="frame" x="349" y="716" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Draw PDF">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="umY-KO-Uxx" secondAttribute="bottom" constant="278" id="4u3-AM-j2G"/>
+                            <constraint firstItem="umY-KO-Uxx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FYt-0B-6lS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="T85-91-6Bn"/>
                 </viewController>
