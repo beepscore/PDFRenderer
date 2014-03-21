@@ -26,6 +26,7 @@
 		DE2A19E918DBD86B007D97F8 /* PDFRendererTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A19E818DBD86B007D97F8 /* PDFRendererTests.m */; };
 		DE2A19F418DBE947007D97F8 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A19F318DBE947007D97F8 /* PDFViewController.m */; };
 		DE2A19F518DBE947007D97F8 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2A19F318DBE947007D97F8 /* PDFViewController.m */; };
+		DE6E3EEB18DC22B30065D779 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE6E3EEA18DC22B30065D779 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		DE2A19E818DBD86B007D97F8 /* PDFRendererTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFRendererTests.m; sourceTree = "<group>"; };
 		DE2A19F218DBE947007D97F8 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
 		DE2A19F318DBE947007D97F8 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		DE6E3EEA18DC22B30065D779 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		DE2A19AE18DBD86A007D97F8 = {
 			isa = PBXGroup;
 			children = (
+				DE6E3EEA18DC22B30065D779 /* README.md */,
 				DE2A19C018DBD86B007D97F8 /* PDFRenderer */,
 				DE2A19E218DBD86B007D97F8 /* PDFRendererTests */,
 				DE2A19B918DBD86B007D97F8 /* Frameworks */,
@@ -245,6 +248,7 @@
 			files = (
 				DE2A19D118DBD86B007D97F8 /* Main_iPad.storyboard in Resources */,
 				DE2A19D618DBD86B007D97F8 /* Images.xcassets in Resources */,
+				DE6E3EEB18DC22B30065D779 /* README.md in Resources */,
 				DE2A19CE18DBD86B007D97F8 /* Main_iPhone.storyboard in Resources */,
 				DE2A19C518DBD86B007D97F8 /* InfoPlist.strings in Resources */,
 			);
