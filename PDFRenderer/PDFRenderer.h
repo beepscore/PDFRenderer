@@ -17,4 +17,6 @@
 
 + (void)drawLineFromPoint:(CGPoint)from toPoint:(CGPoint)to;
 
++ (void)drawImage:(UIImage*)image inRect:(CGRect)rect;
+
 @end

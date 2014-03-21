@@ -16,11 +16,16 @@
     // Mark the beginning of a new page.
     UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, 612, 792), nil);
 
+    // if drawImage is after drawText, logo isn't visible
+    UIImage *logo = [UIImage imageNamed:@"ray-logo"];
+    CGRect frame = CGRectMake(20, 100, 300, 60);
+    [PDFRenderer drawImage:logo inRect:frame];
+
+    [self drawText];
+
     CGPoint from = CGPointMake(0, 0);
     CGPoint to = CGPointMake(200, 300);
     [PDFRenderer drawLineFromPoint:from toPoint:to];
-
-    [self drawText];
 
     // Close the PDF context and write the contents out.
     UIGraphicsEndPDFContext();
@@ -98,6 +103,10 @@
     CGContextStrokePath(context);
     CGColorSpaceRelease(colorspace);
     CGColorRelease(color);
+}
+
++ (void)drawImage:(UIImage*)image inRect:(CGRect)rect {
+    [image drawInRect:rect];
 }
 
 @end
