@@ -62,6 +62,11 @@
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
 
     NSURL *url = [NSURL fileURLWithPath:pdfFileName];
+    // url is similar to
+    // file:///Users/stevebaker/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/7115BE49-C9C3-4874-9A85-583147BC5A97/Documents/Invoice.PDF
+    // Can run app on simulator, get url, then on Mac set web browser to url and view pdf file.
+    NSLog(@"url %@", url);
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView setScalesPageToFit:YES];
     [webView loadRequest:request];
