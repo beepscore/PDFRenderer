@@ -77,7 +77,7 @@
                                         NSDocumentDirectory,
                                         NSUserDomainMask,
                                         YES);
-    NSString *path = [arrayPaths objectAtIndex:0];
+    NSString *path = arrayPaths[0];
     NSString* pdfFileName = [path stringByAppendingPathComponent:fileName];
     return pdfFileName;
 }
@@ -115,7 +115,7 @@
     NSArray *arrayPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
                                                               NSUserDomainMask,
                                                               YES);
-    NSString *path = [arrayPaths objectAtIndex:0];
+    NSString *path = arrayPaths[0];
     NSString *pdfFileName = [path stringByAppendingPathComponent:fileName];
 
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
