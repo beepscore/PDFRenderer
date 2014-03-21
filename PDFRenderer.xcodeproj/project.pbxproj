@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE068E4218DC0E1A000F4FB8 /* PDFRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE068E4118DC0E1A000F4FB8 /* PDFRenderer.m */; };
+		DE068E4318DC0E1A000F4FB8 /* PDFRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DE068E4118DC0E1A000F4FB8 /* PDFRenderer.m */; };
 		DE2A19BB18DBD86B007D97F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2A19BA18DBD86B007D97F8 /* Foundation.framework */; };
 		DE2A19BD18DBD86B007D97F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2A19BC18DBD86B007D97F8 /* CoreGraphics.framework */; };
 		DE2A19BF18DBD86B007D97F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2A19BE18DBD86B007D97F8 /* UIKit.framework */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE068E4018DC0E1A000F4FB8 /* PDFRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFRenderer.h; sourceTree = "<group>"; };
+		DE068E4118DC0E1A000F4FB8 /* PDFRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFRenderer.m; sourceTree = "<group>"; };
 		DE2A19B718DBD86B007D97F8 /* PDFRenderer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFRenderer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2A19BA18DBD86B007D97F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE2A19BC18DBD86B007D97F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +128,8 @@
 				DE2A19CF18DBD86B007D97F8 /* Main_iPad.storyboard */,
 				DE2A19D218DBD86B007D97F8 /* ViewController.h */,
 				DE2A19D318DBD86B007D97F8 /* ViewController.m */,
+				DE068E4018DC0E1A000F4FB8 /* PDFRenderer.h */,
+				DE068E4118DC0E1A000F4FB8 /* PDFRenderer.m */,
 				DE2A19F218DBE947007D97F8 /* PDFViewController.h */,
 				DE2A19F318DBE947007D97F8 /* PDFViewController.m */,
 				DE2A19D518DBD86B007D97F8 /* Images.xcassets */,
@@ -262,6 +268,7 @@
 				DE2A19D418DBD86B007D97F8 /* ViewController.m in Sources */,
 				DE2A19CB18DBD86B007D97F8 /* AppDelegate.m in Sources */,
 				DE2A19C718DBD86B007D97F8 /* main.m in Sources */,
+				DE068E4218DC0E1A000F4FB8 /* PDFRenderer.m in Sources */,
 				DE2A19F418DBE947007D97F8 /* PDFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE2A19E918DBD86B007D97F8 /* PDFRendererTests.m in Sources */,
+				DE068E4318DC0E1A000F4FB8 /* PDFRenderer.m in Sources */,
 				DE2A19F518DBE947007D97F8 /* PDFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
